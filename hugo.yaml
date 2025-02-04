@@ -1,0 +1,50 @@
+# Hugo configuration file
+title: Glen Racing
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Shop
+      weight: 1
+      url: "https://glenracing.com/collections/all"
+    - name: Contact
+      weight: 2
+      url: "https://glenracing.com/pages/contact"
+    - name: Instagram
+      weight: 3
+      url: "https://www.instagram.com/glenracing"
+    - name: Search
+      weight: 4
+      params:
+        type: search
+
+params:
+  page:
+    width: full
+
+  navbar:
+    width: full
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    width: full
+    displayCopyright: true
+    displayPoweredBy: true
+
+  editURL:
+    enable: false
